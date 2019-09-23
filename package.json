@@ -1,85 +1,93 @@
 {
-  "bugs": {
-    "url": "https://github.com/joeljeske/karma-parallel/issues"
-  },
-  "contributors": [
-    {
-      "name": "Joel Jeske",
-      "url": "https://github.com/joeljeske"
-    }
-  ],
-  "peerDependencies": {
-    "karma": ">= 1.0.0"
-  },
-  "dependencies": {
-    "istanbul": "^0.4.5",
-    "lodash": "^4.17.11"
-  },
-  "description": "A Karma JS Framework to support sharding tests to run in parallel across multiple browsers",
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "eslint": "^5.9.0",
-    "eslint-plugin-security": "^1.4.0",
-    "jasmine": "^3.3.0",
-    "jasmine-core": "^2.99.1",
-    "karma": "^3.1.3",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-coverage": "^1.1.2",
-    "karma-coverage-istanbul-reporter": "^1.4.3",
-    "karma-jasmine": "^1.1.2",
-    "karma-junit-reporter": "^1.2.0",
-    "karma-mocha": "^1.3.0",
-    "mocha": "^5.2.0",
-    "npm-run-all": "^4.1.5"
-  },
-  "directories": {
-    "lib": "./lib",
-    "test": "./test"
-  },
-  "engines": {
-    "node": ">=6"
-  },
-  "homepage": "https://github.com/joeljeske/karma-parallel#readme",
-  "keywords": [
-    "karma",
-    "karma-parallel",
-    "karma-sharding",
-    "karma-plugin"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "maintainers": [
-    {
-      "name": "Joel Jeske",
-      "url": "https://github.com/joeljeske"
-    }
-  ],
-  "name": "karma-parallel",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "readme": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joeljeske/karma-parallel.git"
-  },
-  "scripts": {
-    "karma:jasmine": "karma start karma-confs/jasmine.conf.js",
-    "karma:jasmine-junit": "karma start karma-confs/jasmine-junit.conf.js",
-    "karma:jasmine-focused": "karma start karma-confs/jasmine-focused.conf.js",
-    "karma:jasmine-coverage": "karma start karma-confs/jasmine-coverage.conf.js",
-    "karma:jasmine-istanbul-coverage": "karma start karma-confs/jasmine-istanbul-coverage.conf.js",
-    "karma:jasmine-custom-strategy": "karma start karma-confs/jasmine-custom-strategy.conf.js",
-    "karma:mocha": "karma start karma-confs/mocha.conf.js",
-    "karma:mocha-junit": "karma start karma-confs/mocha-junit.conf.js",
-    "karma:mocha-focused": "karma start karma-confs/mocha-focused.conf.js",
-    "karma:mocha-coverage": "karma start karma-confs/mocha-coverage.conf.js",
-    "karma:mocha-custom-strategy": "karma start karma-confs/mocha-custom-strategy.conf.js",
-    "karma:mocha-istanbul-coverage": "karma start karma-confs/mocha-istanbul-coverage.conf.js",
-    "karma": "run-p --aggregate-output karma:*",
-    "lint": "eslint --fix --config .eslintrc.json lib/\\*.js test/\\*.js index.js",
-    "test": "run-p --aggregate-output lint karma"
-  },
-  "version": "0.3.1"
+    "bugs": {
+        "url": "https://github.com/joeljeske/karma-parallel/issues"
+    },
+    "contributors": [
+        {
+            "name": "Joel Jeske",
+            "url": "https://github.com/joeljeske"
+        },
+        {
+            "name": "Nick Soranno",
+            "url": "https://github.com/alonewarrior"
+        }
+    ],
+    "peerDependencies": {
+        "karma": ">= 1.0.0"
+    },
+    "dependencies": {
+        "istanbul": "^0.4.5",
+        "lodash": "^4.17.11"
+    },
+    "description": "A Karma JS Framework to support sharding tests to run in parallel across multiple browsers",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "eslint": "^5.9.0",
+        "eslint-plugin-security": "^1.4.0",
+        "jasmine": "^3.3.0",
+        "jasmine-core": "^2.99.1",
+        "karma": "^3.1.3",
+        "karma-chai": "^0.1.0",
+        "karma-chrome-launcher": "^2.2.0",
+        "karma-coverage": "^1.1.2",
+        "karma-coverage-istanbul-reporter": "^1.4.3",
+        "karma-jasmine": "^1.1.2",
+        "karma-junit-reporter": "^1.2.0",
+        "karma-mocha": "^1.3.0",
+        "mocha": "^5.2.0",
+        "npm-run-all": "^4.1.5"
+    },
+    "directories": {
+        "lib": "./lib",
+        "test": "./test"
+    },
+    "engines": {
+        "node": ">=6"
+    },
+    "homepage": "https://github.com/joeljeske/karma-parallel#readme",
+    "keywords": [
+        "karma",
+        "karma-parallel",
+        "karma-sharding",
+        "karma-plugin"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "Joel Jeske",
+            "url": "https://github.com/joeljeske"
+        },
+        {
+            "name": "Nick Soranno",
+            "url": "https://github.com/alonewarrior"
+        }
+    ],
+    "name": "karma-parallel-2",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
+    "readme": "README.md",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alonewarrior/karma-parallel.git"
+    },
+    "scripts": {
+        "karma:jasmine": "karma start karma-confs/jasmine.conf.js",
+        "karma:jasmine-junit": "karma start karma-confs/jasmine-junit.conf.js",
+        "karma:jasmine-focused": "karma start karma-confs/jasmine-focused.conf.js",
+        "karma:jasmine-coverage": "karma start karma-confs/jasmine-coverage.conf.js",
+        "karma:jasmine-istanbul-coverage": "karma start karma-confs/jasmine-istanbul-coverage.conf.js",
+        "karma:jasmine-custom-strategy": "karma start karma-confs/jasmine-custom-strategy.conf.js",
+        "karma:mocha": "karma start karma-confs/mocha.conf.js",
+        "karma:mocha-junit": "karma start karma-confs/mocha-junit.conf.js",
+        "karma:mocha-focused": "karma start karma-confs/mocha-focused.conf.js",
+        "karma:mocha-coverage": "karma start karma-confs/mocha-coverage.conf.js",
+        "karma:mocha-custom-strategy": "karma start karma-confs/mocha-custom-strategy.conf.js",
+        "karma:mocha-istanbul-coverage": "karma start karma-confs/mocha-istanbul-coverage.conf.js",
+        "karma": "run-p --aggregate-output karma:*",
+        "lint": "eslint --fix --config .eslintrc.json lib/\\*.js test/\\*.js index.js",
+        "test": "run-p --aggregate-output lint karma"
+    },
+    "version": "0.3.1"
 }

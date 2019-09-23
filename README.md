@@ -1,4 +1,4 @@
-# karma-parallel
+# karma-parallel-2 (karma-parallel)
 
 [![npm version](https://img.shields.io/npm/v/karma-parallel.svg?style=flat-square)](https://www.npmjs.com/package/karma-parallel)
 [![npm downloads](https://img.shields.io/npm/dm/karma-parallel.svg?style=flat-square)](https://www.npmjs.com/package/karma-parallel)
@@ -7,7 +7,7 @@
 [![dependencies Status](https://david-dm.org/joeljeske/karma-parallel/status.svg)](https://david-dm.org/joeljeske/karma-parallel)
 [![devDependencies Status](https://david-dm.org/joeljeske/karma-parallel/dev-status.svg)](https://david-dm.org/joeljeske/karma-parallel?type=dev)
 
-> A Karma JS plugin to support sharding tests to run in parallel across multiple browsers. Now supporting code coverage!
+> A Karma JS plugin to support sharding tests to run in parallel across multiple browsers. Now supporting code coverage! *This temporarily replaces karma-parallel to fix an issue while using karma within an IDE*
 
 # Overview
 
